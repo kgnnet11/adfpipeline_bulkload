@@ -1,0 +1,17 @@
+{
+	"name": "ds_sql_src",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"server": "azureserverdb1.database.windows.net",
+			"database": "salesdb",
+			"encrypt": "mandatory",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "shaik",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQEI0Qjg4NzRGLTM4M0UtNDY3QS04QjNFLUFEQjA5M0M5RENEQl8wYzA0YWZjZS00YWY2LTQ0NzgtYTE1Ny1iYzE5OTI4YWMzYTciDQp9"
+		}
+	}
+}
