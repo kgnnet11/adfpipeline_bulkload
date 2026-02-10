@@ -5,8 +5,26 @@
 		"factoryName": {
 			"value": "adfsrctarget"
 		},
+		"ds_sql_src_password": {
+			"value": ""
+		},
+		"ls_adls_tgt_accountKey": {
+			"value": ""
+		},
 		"ls_src_employee_accountKey": {
 			"value": ""
+		},
+		"ds_sql_src_properties_typeProperties_server": {
+			"value": "azureserverdb1.database.windows.net"
+		},
+		"ds_sql_src_properties_typeProperties_database": {
+			"value": "salesdb"
+		},
+		"ds_sql_src_properties_typeProperties_userName": {
+			"value": "shaik"
+		},
+		"ls_adls_tgt_properties_typeProperties_url": {
+			"value": "https://stradlsgen2.dfs.core.windows.net/"
 		},
 		"ls_src_employee_properties_typeProperties_url": {
 			"value": "https://stradlsgen2.dfs.core.windows.net/"

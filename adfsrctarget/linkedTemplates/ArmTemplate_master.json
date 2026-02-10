@@ -7,9 +7,33 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "adfsrctarget"
 		},
+		"ds_sql_src_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'ds_sql_src'"
+		},
+		"ls_adls_tgt_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'ls_adls_tgt'"
+		},
 		"ls_src_employee_accountKey": {
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'ls_src_employee'"
+		},
+		"ds_sql_src_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "azureserverdb1.database.windows.net"
+		},
+		"ds_sql_src_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "salesdb"
+		},
+		"ds_sql_src_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "shaik"
+		},
+		"ls_adls_tgt_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://stradlsgen2.dfs.core.windows.net/"
 		},
 		"ls_src_employee_properties_typeProperties_url": {
 			"type": "string",
@@ -42,8 +66,26 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
+					"ds_sql_src_password": {
+						"value": "[parameters('ds_sql_src_password')]"
+					},
+					"ls_adls_tgt_accountKey": {
+						"value": "[parameters('ls_adls_tgt_accountKey')]"
+					},
 					"ls_src_employee_accountKey": {
 						"value": "[parameters('ls_src_employee_accountKey')]"
+					},
+					"ds_sql_src_properties_typeProperties_server": {
+						"value": "[parameters('ds_sql_src_properties_typeProperties_server')]"
+					},
+					"ds_sql_src_properties_typeProperties_database": {
+						"value": "[parameters('ds_sql_src_properties_typeProperties_database')]"
+					},
+					"ds_sql_src_properties_typeProperties_userName": {
+						"value": "[parameters('ds_sql_src_properties_typeProperties_userName')]"
+					},
+					"ls_adls_tgt_properties_typeProperties_url": {
+						"value": "[parameters('ls_adls_tgt_properties_typeProperties_url')]"
 					},
 					"ls_src_employee_properties_typeProperties_url": {
 						"value": "[parameters('ls_src_employee_properties_typeProperties_url')]"
