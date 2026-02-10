@@ -1,0 +1,26 @@
+{
+	"name": "ds_control_table_sql",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ds_sql_src",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Tablename",
+				"type": "nvarchar"
+			},
+			{
+				"name": "is_active",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "control_table"
+		}
+	}
+}
