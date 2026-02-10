@@ -1,0 +1,9 @@
+{
+	"name": "adfsrctarget",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "9e4be236-95f6-4f9d-a3ff-da2a101e8f5c",
+		"tenantId": "96f6ad31-074a-42df-b50b-ff687076cf31"
+	}
+}
